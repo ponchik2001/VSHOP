@@ -1,0 +1,91 @@
+.head_wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: white;
+}
+
+header .container {
+    padding: 0;
+}
+
+header .top_line_wrapper,header .under_line_wrapper{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+    margin: 0 auto;
+}
+
+header .top_line {
+    padding: 10px 15px;
+    background: #F5F5F5;
+    font-family: 'Fira Sans';
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+header .top_line a {
+    color: #CD0000;
+}
+
+header .top_line a:hover {
+    color: #900000;
+}
+
+header .top_line a:hover {
+    text-decoration: underline;
+}
+
+header .top_line a span {
+    color: black;
+    text-decoration-color: black;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header .under_line {
+    padding: 0 15px;
+    border-top: 1px solid #C9CDCE;
+    border-bottom: 1px solid #C9CDCE;
+}
+
+header .logo {
+    font-size: 30px;
+}
+
+header .logo a {
+    color: #CD0000;
+}
+
+header a {
+    text-decoration: none;
+}
+
+
+/*Кнопка подачи объявления*/
+header .add_ads {
+    text-transform: uppercase;
+    padding: 15px;
+    background: #CD0000;
+    color: white;
+}
+
+header .add_ads:hover {
+    background: #900000;
+}
+
+
+/*Стилизация меню*/
+.nav_wrapper {
+    padding-top: 82px;
+}
+.nav_wrapper .nav {
+}
+.nav_wrapper li {
+}
+
