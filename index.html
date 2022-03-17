@@ -5,8 +5,9 @@
     <title> VS </title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/filter.js"></script>
 </head>
 
 <body>
@@ -17,43 +18,335 @@
         <div class="head_wrapper">
             <div class="top_line">
                 <div class="top_line_wrapper">
-                    <div class="support">Техподдержка: <a href="help@vshop.com">help@vshop.com</a></div>
+                    <div class="support">Техподдержка: <a href="mail:help@vshop.com">help@vshop.com</a></div>
+
+                    <!--                    Если пользователь не авторизован-->
                     <div class="login">
+                        <!--                    Если пользователь не авторизован-->
                         <a href="Вход">
                             <span>Вход</span>
                         </a>/
                         <a href="Регистрация">Регистрация</a>
-                    </div>
-                </div>
-            </div>
+                        <!--                    Если пользователь не авторизован-->
 
-            <div class="container">
-                <div class="under_line">
-                    <div class="under_line_wrapper">
-                        <div class="logo">
-                            <a href="index.html">VSHOP</a>
-                        </div>
 
-                        <a href="">
-                            <div class="add_ads">Подать объявление</div>
+                        <!--
+                        <a href="Вход">
+                            Личный кабинет
                         </a>
-
-                        <!--            Если пользователь авторизован-->
+-->
 
                     </div>
+
                 </div>
             </div>
+
+
+            <div class="under_line">
+                <div class="under_line_wrapper">
+                    <div class="logo">
+                        <a href="index.html">VSHOP</a>
+                    </div>
+
+                    <a href="">
+                        <div class="add_ads">Подать объявление</div>
+                    </a>
+
+                    <!--            Если пользователь авторизован-->
+
+                </div>
+            </div>
+
         </div>
         <!--       Фиксированная часть-->
         <!--        Меню-->
-        
+        <div class="nav_wrapper">
+            <ul class="nav">
+                <li class="nav_item"><a href="">Легковые авто</a></li>
+                <li class="nav_item"><a href="">Легковые авто</a></li>
+                <li class="nav_item"><a href="">Легковые авто</a></li>
+            </ul>
+        </div>
     </header>
     <!--    /header   -->
-    <div class="nav_wrapper">
-            <div class="nav">
-                
-            </div>
+
+    <!--  ФИЛЬТР  -->
+    <section class="filter">
+        <div class="container">
+
+
+            <form action="" method="get">
+                <!--            onclick="hide()">-->
+                <div class="filter_wrap">
+                    <!--Тип траспортного средства-->
+                    <select name="vehicle_type" id="" class="filter_select">
+                        <option value="small_car">Легковые авто</option>
+                        <option value="big_car">Грузовые авто</option>
+                    </select>
+                    <!--Тип траспортного средства-->
+
+                    <!--Марка-->
+                    <select name="brand" id="" class="filter_select">
+                        <option value="Audi">Марка</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Lada">LADA</option>
+                    </select>
+                    <!--Марка-->
+                    
+                    <!--Модель-->
+                    <select name="brand" id="" class="filter_select">
+                        <option value="Audi">Модель</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Lada">LADA</option>
+                    </select>
+                    <!--Модель-->
+
+                    <!--Цена от ... до ..., валюта-->
+                    <div>
+                        <div class="filter_select" onclick="hide_price_from_to()">Цена</div>
+                        <div class="select_wrapper hide" id="price_from_to">
+                            <div class="select_title">Цена</div>
+                            <div class="untitle_wrapper">
+                                <input type="number" name="price_from" placeholder="Цена от">
+                                <input type="number" name="price_to" placeholder="Цена до">
+                                <select name="currency_type" id="" class="filter_select_fromTo">
+                                    <option value="USD">USD</option>
+                                    <option value="BYN">BYN</option>
+                                    <option value="EUR">EUR</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Цена от ... до ..., валюта-->
+
+                    <!--Год от ... до ...-->
+                    <div>
+                        <div class="filter_select" onclick="hide_year_from_to()">Год</div>
+                        <div class="select_wrapper hide" id="year_from_to">
+                            <div class="select_title">Год</div>
+                            <div class="untitle_wrapper">
+                                <select name="year_from" id="" class="filter_select_fromTo">
+                                    <option value="">От</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                </select>
+                                <select name="year_to" id="" class="filter_select_fromTo">
+                                    <option value="">До</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Год от ... до ...-->
+
+                    <!--Пробег от ... до ...-->
+                    <div>
+                        <div class="filter_select" onclick="hide_km_from_to()">Пробег</div>
+                        <div class="select_wrapper hide" id="km_from_to">
+                            <div class="select_title">Пробег</div>
+                            <div class="untitle_wrapper">
+                                <input type="number" name="km_from">
+                                <input type="number" name="km_to">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Пробег от ... до ...-->
+
+                    <!--Тип двигателя-->
+                    <div>
+                        <div class="filter_select" onclick="hide_engine_type()">Тип двигателя</div>
+                        <div class="select_wrapper hide" id="engine_type">
+                            <div class="input_checkbox">
+                                <input type="checkbox" name="benz" value="benz">
+                                <label for="benz">Бензин</label>
+                            </div>
+
+                            <div class="input_checkbox">
+                                <input type="checkbox" name="dt" value="dt">
+                                <label for="dt">Дизель</label>
+                            </div>
+
+                            <div class="input_checkbox">
+                                <input type="checkbox" name="gaz" value="gaz">
+                                <label for="gaz">Газ</label>
+                            </div>
+
+                            <div class="input_checkbox">
+                                <input type="checkbox" name="gibr" value="gibr">
+                                <label for="gibr">Гибрид</label>
+                            </div>
+
+                            <div class="input_checkbox">
+                                <input type="checkbox" name="el" value="el">
+                                <label for="el">Электромобиль</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Тип двигателя-->
+
+                    <!--Объём от ... до ...-->
+                    <div>
+                        <div class="filter_select" onclick="hide_volume_engine()">Объём</div>
+                        <div class="select_wrapper hide" id="volume_engine">
+                            <div class="select_title">Объём</div>
+                            <div class="untitle_wrapper">
+                                <select name="volume_from" id="" class="filter_select_fromTo">
+                                    <option value="">&#45;От</option>
+                                    <option value="1">&lt;1</option>
+                                    <option value="1,1">1,1</option>
+                                    <option value="1,2">1,2</option>
+                                    <option value="1,3">1,3</option>
+                                    <option value="1,4">1,4</option>
+                                    <option value="1,5">1,5</option>
+                                    <option value="1,6">1,6</option>
+                                    <option value="1,7">1,7</option>
+                                    <option value="1,8">1,8</option>
+                                    <option value="1,9">1,9</option>
+                                    <option value="2,0">2,0</option>
+                                </select>
+                                <select name="volume_to" id="" class="filter_select_fromTo">
+                                    <option value="">&#45;До</option>
+                                    <option value="1">&lt;1</option>
+                                    <option value="1,1">1,1</option>
+                                    <option value="1,2">1,2</option>
+                                    <option value="1,3">1,3</option>
+                                    <option value="1,4">1,4</option>
+                                    <option value="1,5">1,5</option>
+                                    <option value="1,6">1,6</option>
+                                    <option value="1,7">1,7</option>
+                                    <option value="1,8">1,8</option>
+                                    <option value="1,9">1,9</option>
+                                    <option value="2,0">2,0</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Объём от ... до ...-->
+
+                    <!--Коробка передач-->
+                    <select name="transmission" id="" class="filter_select">
+                        <option value="">Коробка передач</option>
+                        <option value="automat">Автомат</option>
+                        <option value="mech">Механика</option>
+                    </select>
+                    <!--Коробка передач-->
+
+                    <!--Тип кузова-->
+                    <div>
+                        <div class="filter_select" onclick="hide_type_body()">Тип кузова</div>
+                        <div class="select_wrapper hide" id="type_body">
+                            <div class="input_checkbox"><input type="checkbox" name="sedan" value="sedan">
+                                <label for="sedan">Седан</label>
+                            </div>
+
+                            <div class="input_checkbox">
+                                <input type="checkbox" name="univer" value="univer">
+                                <label for="univer">Универсал</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Тип кузова-->
+
+                    <!--Привод-->
+                    <select name="drive_type" id="" class="filter_select">
+                        <option value="">Привод</option>
+                        <option value="front">Передний</option>
+                        <option value="back">Задний</option>
+                        <option value="full">Полный</option>
+                    </select>
+                    <!--Привод-->
+
+                    <!--Цвет-->
+                    <div>
+                        <div class="filter_select" onclick="hide_color_body()">Цвет кузова</div>
+                        <div class="select_wrapper hide" id="color_body">
+                            <div class="input_checkbox"><input type="checkbox" name="blue" value="blue">
+                                <label for="blue">Синий</label>
+                            </div>
+
+                            <div class="input_checkbox"><input type="checkbox" name="red" value="red">
+                                <label for="red">Красный</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Цвет-->
+
+                    <!--Состояние-->
+                    <select name="condition" id="" class="filter_select">
+                        <option value="">Состояние</option>
+                        <option value="old">С пробегом</option>
+                        <option value="new">Новый</option>
+                    </select>
+                    <!--Состояние-->
+
+                    <!--Область-->
+                    <select name="region" id="" class="filter_select">
+                        <option value="small_car">Область</option>
+                        <option value="small_car">Минская</option>
+                        <option value="small_car">Бретская</option>
+                    </select>
+                    <!--Область-->
+
+                    <!--Город/район-->
+                    <select name="city" id="" class="filter_select">
+                        <option value="small_car">Город/район</option>
+                        <option value="small_car">Бретская</option>
+                    </select>
+                    <!--Город/район-->
+
+                    <!--Продавец-->
+                    <select name="saler_type" id="" class="filter_select">
+                        <option value="">Продавец</option>
+                        <option value="private_face">Частное лицо</option>
+                        <option value="company">Компания</option>
+                    </select>
+                    <!--Продавец-->
+                </div>
+
+                <div class="filter_buttons_wrapper">
+                    <div class="more_filter">Больше фильтров<img src="img/disign/select-bg.png" alt=""></div>
+                    <input type="reset" name="clear" value="Сбросить фильтры" class="">
+                    <label for="clear"><img src="img/disign/X.png" alt="" style="width: 20px; height: 20px;"></label>
+                    <button class="filter_button">Искать</button>
+                </div>
+
+            </form>
+
         </div>
+    </section>
+    <!--  ФИЛЬТР  -->
 
 
 

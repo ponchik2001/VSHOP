@@ -1,0 +1,185 @@
+.filter {}
+
+.filter .container form .filter_wrap{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.filter form {}
+
+.filter form select {}
+
+.filter form option {}
+
+
+
+
+
+.filter_select {
+    margin: 3px 15px;
+    position: relative;
+    height: 40px;
+    border-radius: 5px;
+    width: 210px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../img/disign/select-bg.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    appearance: none;
+}
+
+
+
+.filter_select_fromTo{
+    height: 40px;
+    border-radius: 5px;
+    width: 80px;
+    padding: 3px;
+    margin: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(../../img/disign/select-bg.png);
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    appearance: none;   
+}
+
+.filter .select_wrapper{
+    
+}
+
+.filter .select_wrapper option {}
+
+.filter button {
+    display: block;
+}
+
+
+/*Кнопки управления*/
+.filter_buttons_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px;
+    flex-wrap: wrap;
+    font-family: Fira Sans;
+}
+.filter_buttons_wrapper .more_filter {
+    margin-right: 15px;  
+    cursor: pointer;
+}
+
+.filter_buttons_wrapper .more_filter:hover{
+    text-decoration: underline;
+}
+
+.filter_buttons_wrapper .more_filter img {
+    margin-left: 5px;
+}
+.filter_buttons_wrapper input {
+}
+.filter_buttons_wrapper label {
+    cursor: pointer;
+}
+.filter_buttons_wrapper input{
+    border: none;
+    background: none;
+    color:#CD0000;
+    /*background: url(../../img/disign/X.png);*/
+}
+
+.filter_buttons_wrapper input:hover{
+    text-decoration: underline;
+}
+
+.filter_buttons_wrapper button{
+    padding: 10px 30px;
+    margin-left: auto;
+    border: none;
+}
+
+
+/*Стили для сложных выпадающих списков*/
+
+.filter .hide {/*Обёртка для сложных выпадающих списков*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #F5F5F5;
+    z-index: 100;
+    border: 1px solid #C9CDCE;
+}
+
+.select_title{
+    font-family: Fira Sans; 
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.untitle_wrapper {/*Обёртка части под заголовком для сложных выпадающих списков*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.hide .untitle_wrapper select{
+    margin: 5px 0;
+    padding-left: 8px;
+}
+
+.hide input{
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 0 5px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.hide .input_checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.hide .input_checkbox input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+
+.filter .select_wrapper {
+    display: none;
+}
+
+
+
+div {
+}
+
+div #price_from_to {
+}
+div #price_from_todiv #price_from_todiv .select_title {
+}
+
+div input {
+}
+div .filter_select_fromTo {
+}
+div option {
+}

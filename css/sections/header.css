@@ -1,3 +1,10 @@
+header{
+    font-family: Fira Sans;
+    font-weight: bold;
+    color: black;
+    font-weight: normal;
+}
+
 .head_wrapper {
     position: fixed;
     width: 100%;
@@ -68,24 +75,50 @@ header a {
 
 
 /*Кнопка подачи объявления*/
-header .add_ads {
+.add_ads, .filter_button{
     text-transform: uppercase;
     padding: 15px;
     background: #CD0000;
     color: white;
+    border-radius: 5px;
 }
 
-header .add_ads:hover {
+header .add_ads:hover, .filter_button:hover {
     background: #900000;
 }
 
 
 /*Стилизация меню*/
 .nav_wrapper {
-    padding-top: 82px;
+    padding: 95px 15px 0px;
+    font-family:  Fira Sans;
+    border-bottom: 1px solid #C9CDCE;
+
 }
+
 .nav_wrapper .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0 10px;   
 }
-.nav_wrapper li {
+
+
+.nav_wrapper .nav_item{
+    margin-left: 20px;
+}
+
+.nav_wrapper .nav_item:first-child{
+    margin-left: 0;
+}
+
+
+.nav_wrapper a {
+    color: black;
+    font-weight: normal;
+}
+.nav_wrapper a:hover{
+    color: #CD0000;
 }
 
