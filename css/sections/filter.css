@@ -209,6 +209,11 @@ div option {
     display: none;
 }
 
+@media (max-width: 950px) {
+    .chekbox_part_wrappper .input_checkbox {
+        width: 100%;
+    }
+}
 
 
 
