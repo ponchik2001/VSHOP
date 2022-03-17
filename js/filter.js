@@ -100,11 +100,47 @@ function hide_color_body(){
 //Цвет кузова
 
 
+//Больше фильтров
+var more_filter = 0;
+function hide_more_filter(){
+    if (more_filter == 1){
+        more_filter = 0;
+        //document.getElementById("filter_item6").classList.remove("hide_select");
+        document.getElementById("filter_item7").classList.remove("hide_select");
+        document.getElementById("filter_item8").classList.remove("hide_select");
+        document.getElementById("filter_item9").classList.remove("hide_select");
+        document.getElementById("filter_item10").classList.remove("hide_select");
+        document.getElementById("filter_item11").classList.remove("hide_select");
+        document.getElementById("filter_item12").classList.remove("hide_select");
+        document.getElementById("filter_item13").classList.remove("hide_select");
+        document.getElementById("filter_item14").classList.remove("hide_select");
+        document.getElementById("filter_item15").classList.remove("hide_select");
+        document.getElementById("filter_item16").classList.remove("hide_select");
+        document.getElementById("filter_item17").classList.remove("hide_select");
+        document.getElementById("filter_item18").classList.remove("hide_select");
+        document.getElementById("more_filter_button").innerHTML = 'Меньше фильтров<img src="img/disign/select-bg.png" alt="" style="transform: rotate(180deg)">';
+    } else if (more_filter == 0){
+        more_filter = 1;
+        //document.getElementById("filter_item6").classList.add("hide_select");
+        document.getElementById("filter_item7").classList.add("hide_select");
+        document.getElementById("filter_item8").classList.add("hide_select");
+        document.getElementById("filter_item9").classList.add("hide_select");
+        document.getElementById("filter_item10").classList.add("hide_select");
+        document.getElementById("filter_item11").classList.add("hide_select");
+        document.getElementById("filter_item12").classList.add("hide_select");
+        document.getElementById("filter_item13").classList.add("hide_select");
+        document.getElementById("filter_item14").classList.add("hide_select");
+        document.getElementById("filter_item15").classList.add("hide_select");
+        document.getElementById("filter_item16").classList.add("hide_select");
+        document.getElementById("filter_item17").classList.add("hide_select");
+        document.getElementById("filter_item18").classList.add("hide_select");
+        document.getElementById("more_filter_button").innerHTML = 'Больше фильтров<img src="img/disign/select-bg.png" alt="" style="transform: rotate(0)">';
+    }
+}
 
 
 
-
-
+hide_more_filter();
 
 
 

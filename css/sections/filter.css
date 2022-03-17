@@ -183,3 +183,36 @@ div .filter_select_fromTo {
 }
 div option {
 }
+
+
+/*Часть фильтра с чекбоксами*/
+.chekbox_part_wrappper {
+    border: 1px solid #C9CDCE;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.chekbox_part_wrappper .input_checkbox {
+    margin: 5px;
+    width: 30%;
+}
+.chekbox_part_wrappper input {
+}
+.chekbox_part_wrappper label {
+}
+
+/*Для работы кнопки больше фильтров*/
+.filter .container form .hide_select{
+    display: none;
+}
+
+
+
+
+
+
+
+

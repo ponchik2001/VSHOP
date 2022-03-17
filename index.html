@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title> VS </title>
@@ -93,7 +94,7 @@
                         <option value="Lada">LADA</option>
                     </select>
                     <!--Марка-->
-                    
+
                     <!--Модель-->
                     <select name="brand" id="" class="filter_select">
                         <option value="Audi">Модель</option>
@@ -171,7 +172,7 @@
                     <!--Год от ... до ...-->
 
                     <!--Пробег от ... до ...-->
-                    <div>
+                    <div id="filter_item18" class="hide_select">
                         <div class="filter_select" onclick="hide_km_from_to()">Пробег</div>
                         <div class="select_wrapper hide" id="km_from_to">
                             <div class="select_title">Пробег</div>
@@ -184,7 +185,7 @@
                     <!--Пробег от ... до ...-->
 
                     <!--Тип двигателя-->
-                    <div>
+                    <div id="filter_item7" class="hide_select">
                         <div class="filter_select" onclick="hide_engine_type()">Тип двигателя</div>
                         <div class="select_wrapper hide" id="engine_type">
                             <div class="input_checkbox">
@@ -217,7 +218,7 @@
                     <!--Тип двигателя-->
 
                     <!--Объём от ... до ...-->
-                    <div>
+                    <div  id="filter_item8" class="hide_select">
                         <div class="filter_select" onclick="hide_volume_engine()">Объём</div>
                         <div class="select_wrapper hide" id="volume_engine">
                             <div class="select_title">Объём</div>
@@ -256,7 +257,7 @@
                     <!--Объём от ... до ...-->
 
                     <!--Коробка передач-->
-                    <select name="transmission" id="" class="filter_select">
+                    <select name="transmission"  id="filter_item9" class="filter_select hide_select">
                         <option value="">Коробка передач</option>
                         <option value="automat">Автомат</option>
                         <option value="mech">Механика</option>
@@ -264,7 +265,7 @@
                     <!--Коробка передач-->
 
                     <!--Тип кузова-->
-                    <div>
+                    <div  id="filter_item10" class="hide_select">
                         <div class="filter_select" onclick="hide_type_body()">Тип кузова</div>
                         <div class="select_wrapper hide" id="type_body">
                             <div class="input_checkbox"><input type="checkbox" name="sedan" value="sedan">
@@ -280,7 +281,7 @@
                     <!--Тип кузова-->
 
                     <!--Привод-->
-                    <select name="drive_type" id="" class="filter_select">
+                    <select name="drive_type"  id="filter_item11" class="filter_select hide_select">
                         <option value="">Привод</option>
                         <option value="front">Передний</option>
                         <option value="back">Задний</option>
@@ -289,7 +290,7 @@
                     <!--Привод-->
 
                     <!--Цвет-->
-                    <div>
+                    <div  id="filter_item12" class="hide_select">
                         <div class="filter_select" onclick="hide_color_body()">Цвет кузова</div>
                         <div class="select_wrapper hide" id="color_body">
                             <div class="input_checkbox"><input type="checkbox" name="blue" value="blue">
@@ -304,7 +305,7 @@
                     <!--Цвет-->
 
                     <!--Состояние-->
-                    <select name="condition" id="" class="filter_select">
+                    <select name="condition"  id="filter_item13" class="filter_select hide_select">
                         <option value="">Состояние</option>
                         <option value="old">С пробегом</option>
                         <option value="new">Новый</option>
@@ -312,7 +313,7 @@
                     <!--Состояние-->
 
                     <!--Область-->
-                    <select name="region" id="" class="filter_select">
+                    <select name="region"  id="filter_item14" class="filter_select hide_select">
                         <option value="small_car">Область</option>
                         <option value="small_car">Минская</option>
                         <option value="small_car">Бретская</option>
@@ -320,14 +321,14 @@
                     <!--Область-->
 
                     <!--Город/район-->
-                    <select name="city" id="" class="filter_select">
+                    <select name="city"  id="filter_item15" class="filter_select hide_select">
                         <option value="small_car">Город/район</option>
                         <option value="small_car">Бретская</option>
                     </select>
                     <!--Город/район-->
 
                     <!--Продавец-->
-                    <select name="saler_type" id="" class="filter_select">
+                    <select name="saler_type"  id="filter_item16" class="filter_select hide_select">
                         <option value="">Продавец</option>
                         <option value="private_face">Частное лицо</option>
                         <option value="company">Компания</option>
@@ -335,12 +336,88 @@
                     <!--Продавец-->
                 </div>
 
+               <div class="chekbox_part_wrappper hide_select"  id="filter_item17">
+                   
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">VIN проверен</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">ABS / ESP / ASR</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">Парктроник / камера</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">Ксенон / биксенон</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">Кондиционер / климат-контроль</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">Штатная навигация</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">Люк / панорамная крыша</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">Круиз-контроль</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">Только с фото</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">Обогрев сидений</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">Легкосплавные диски</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">Защита от угона</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">AUX / USB / Bluetooth</label>
+                    </div>
+                    
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="blue" value="blue">
+                        <label for="blue">Только с видео</label>
+                    </div>
+                    
+                </div>
+               
                 <div class="filter_buttons_wrapper">
-                    <div class="more_filter">Больше фильтров<img src="img/disign/select-bg.png" alt=""></div>
+                    <div class="more_filter" onclick="hide_more_filter()" id="more_filter_button">Больше фильтров<img src="img/disign/select-bg.png" alt=""></div>
                     <input type="reset" name="clear" value="Сбросить фильтры" class="">
                     <label for="clear"><img src="img/disign/X.png" alt="" style="width: 20px; height: 20px;"></label>
                     <button class="filter_button">Искать</button>
                 </div>
+
+                
 
             </form>
 
@@ -350,4 +427,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>
