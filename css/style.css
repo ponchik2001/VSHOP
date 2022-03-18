@@ -1,5 +1,6 @@
 @import url(sections/header.css);
 @import url(sections/filter.css);
+@import url(sections/content.css);
 
 /*Шрифты*/
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;500;600;700&display=swap');
@@ -16,4 +17,33 @@
 
 select{
     background: white;
+}
+
+hr {
+    background: #C9CDCE;
+    height: 1px;
+    border: none;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+/*Футер*/
+footer {
+    margin-top: 20px;
+}
+footer hr {
+    background-color: black;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+footer .container p {
+    color: gray;
+    font-size: 12px;
 }

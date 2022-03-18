@@ -7,16 +7,6 @@
     justify-content: flex-start;
 }
 
-.filter form {}
-
-.filter form select {}
-
-.filter form option {}
-
-
-
-
-
 .filter_select {
     margin: 3px 15px;
     position: relative;
@@ -167,22 +157,6 @@
     display: none;
 }
 
-
-
-div {
-}
-
-div #price_from_to {
-}
-div #price_from_todiv #price_from_todiv .select_title {
-}
-
-div input {
-}
-div .filter_select_fromTo {
-}
-div option {
-}
 
 
 /*Часть фильтра с чекбоксами*/
