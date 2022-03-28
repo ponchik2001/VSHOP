@@ -188,7 +188,26 @@
         width: 100%;
     }
 }
-
+@media (max-width: 525px){
+    .filter_buttons_wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+    }  
+    .filter_buttons_wrapper{
+        flex-direction: column;
+    }
+    .filter_buttons_wrapper button{
+        margin: 0px;
+    }
+    
+    .filter_buttons_wrapper label{
+        display: none;
+    }
+    .filter_buttons_wrapper input{
+        margin: 10px 0;
+        padding: 0;
+    }
+} 
 
 
 
