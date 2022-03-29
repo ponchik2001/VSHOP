@@ -183,6 +183,31 @@
     display: none;
 }
 
+
+/*Навигация по страницам*/
+.pages_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pages_wrapper a {
+    border-radius: 50%;
+    border: 1px solid #C9CDCE;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #CD0000;
+     margin: 0 5px;
+}
+.pages_wrapper span {
+    margin: 0 5px;
+}
+
+
+
 @media (max-width: 950px) {
     .chekbox_part_wrappper .input_checkbox {
         width: 100%;
